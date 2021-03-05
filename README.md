@@ -171,7 +171,6 @@
     ```
 Start to customize
 
-Basic:
 1. Style
 Change less variables, in the less folder, is possibile change
 the less var, to have a basic style customization.
