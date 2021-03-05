@@ -47,7 +47,7 @@
 
 #### ckan docker setup
 - install a ckan instance locally with docker (steps from ckan documentation https://docs.ckan.org/en/2.9/maintaining/installing/install-from-docker-compose.html)
-#### add an extension inside docker of ckan (advice: use vscode to attach with a shell the container)
+#### add an extension inside docker of ckan
 1. clone the geosolutions-ui extension repository
     ```
     cd /path/to/my/projects
