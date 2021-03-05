@@ -103,7 +103,7 @@
     cd ../ckan
     pip install -r dev-requirements.txt
     ```
-#### enable developement enviroment
+#### enable development enviroment
 
 1. add the plugin to the production.ini config
     ```
