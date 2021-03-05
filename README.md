@@ -5,11 +5,11 @@
 
 ### Built With:
 
-[Jinja2!](https://jinja.palletsprojects.com/en/2.11.x/)
+[Jinja2](https://jinja.palletsprojects.com/en/2.11.x/)
 
-[Bootstrap!](https://getbootstrap.com/docs/3.3/)
+[Bootstrap](https://getbootstrap.com/docs/3.3/)
 
-[Less!](http://lesscss.org/)
+[Less](http://lesscss.org/)
 
 
 
