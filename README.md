@@ -3,7 +3,7 @@
 # ckanext-geosolutions-ui
 **CKAN geosolution-ui** is a open-source template, to make easy the publish and development of Ckan frontend.
 
-### Built With:
+**Built With:**
 
 [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/)
 
