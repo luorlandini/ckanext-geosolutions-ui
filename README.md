@@ -106,11 +106,13 @@
 #### enable development enviroment
 
 1. add the plugin to the production.ini config
+
     ```
     #this command have to run inside docker
     vim /etc/ckan/production.ini
     ```
 2. append the name of plugin in the list and set debug equal true (both are in the file)
+
     ```
     debug = true
     ....
