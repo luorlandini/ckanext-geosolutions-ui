@@ -1,0 +1,16 @@
+{
+  "name": "c195",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-css": "lessc -x less/main.less public/base/css/main.css",
+    "watch-less": "less-watch-compiler less/ public/base/css main.less"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.11.2",
+    "less-watch-compiler": "^1.14.6"
+  }
+}
