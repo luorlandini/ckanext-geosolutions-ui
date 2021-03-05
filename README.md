@@ -3,13 +3,13 @@
 # ckanext-geosolutions-ui
 **CKAN geosolution-ui** is a open-source template, to make easy the publish and development of Ckan frontend.
 
-### Built With:
+**Built With:**
 
-[Jinja2!](https://jinja.palletsprojects.com/en/2.11.x/)
+[Jinja2](https://jinja.palletsprojects.com/en/2.11.x/)
 
-[Bootstrap!](https://getbootstrap.com/docs/3.3/)
+[Bootstrap](https://getbootstrap.com/docs/3.3/)
 
-[Less!](http://lesscss.org/)
+[Less](http://lesscss.org/)
 
 
 
@@ -47,7 +47,7 @@
 
 #### ckan docker setup
 - install a ckan instance locally with docker (steps from ckan documentation https://docs.ckan.org/en/2.9/maintaining/installing/install-from-docker-compose.html)
-#### add an extension inside docker of ckan (advice: use vscode to attach with a shell the container)
+#### add an extension inside docker of ckan
 1. clone the geosolutions-ui extension repository
     ```
     cd /path/to/my/projects
@@ -103,21 +103,24 @@
     cd ../ckan
     pip install -r dev-requirements.txt
     ```
-#### enable developement enviroment
+#### enable development enviroment
 
 1. add the plugin to the production.ini config
+
     ```
     #this command have to run inside docker
     vim /etc/ckan/production.ini
     ```
 2. append the name of plugin in the list and set debug equal true (both are in the file)
+
     ```
     debug = true
     ....
 
     ckan.plugins = stats text_view image_view recline_view geosolutions_ui
     ```
-- detach from docker container bash shell and restart ckan docker
+3. detach from docker container bash shell and restart ckan docker
+
     ```
     docker-compose restart ckan
     ```
@@ -171,10 +174,9 @@
     ```
 Start to customize
 
-Basic:
 1. Style
-Change less variables, in the less folder, is possibile change
-the less var, to have a basic style customization.
+
+In the less folder, is possibile change the less variables, to have a basic style customization.
 
 - less/variables.less
 
@@ -193,15 +195,22 @@ the less var, to have a basic style customization.
     @layoutFontFamily: "Helvetica Neue", Arial, sans-serif;
     ```
 2. Logo
+
 To change the logo file, in header and footer override the file
 
-- public/base/img/logo.png or change this var
+- public/base/img/logo.png 
+ 
+or change the logo var in
+
+- templates/footer.html 
+- templates/header.html
 
     ```
         {% set logo = '/base/img/logo.png' %}
     ```
 
-3. Change footer info:
+3. Change footer info
+
     templates/footer.html change this var
 
     ```
@@ -217,7 +226,7 @@ To change the logo file, in header and footer override the file
     ```
         npm run compile-css
     ```
-publish
+
 
 ## Tests
 
