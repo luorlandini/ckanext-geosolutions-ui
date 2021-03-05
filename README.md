@@ -119,7 +119,8 @@
 
     ckan.plugins = stats text_view image_view recline_view geosolutions_ui
     ```
-- detach from docker container bash shell and restart ckan docker
+3. detach from docker container bash shell and restart ckan docker
+
     ```
     docker-compose restart ckan
     ```
