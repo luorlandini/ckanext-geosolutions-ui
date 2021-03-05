@@ -176,8 +176,7 @@ Start to customize
 
 1. Style
 
-Change less variables, in the less folder, is possibile change
-the less var, to have a basic style customization.
+In the less folder, is possibile change the less variables, to have a basic style customization.
 
 - less/variables.less
 
@@ -199,7 +198,10 @@ the less var, to have a basic style customization.
 
 To change the logo file, in header and footer override the file
 
-- public/base/img/logo.png or change this var
+- public/base/img/logo.png or change this var 
+
+- templates/footer.html 
+- templates/header.html
 
     ```
         {% set logo = '/base/img/logo.png' %}
