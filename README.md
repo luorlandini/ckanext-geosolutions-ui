@@ -198,7 +198,9 @@ In the less folder, is possibile change the less variables, to have a basic styl
 
 To change the logo file, in header and footer override the file
 
-- public/base/img/logo.png or change this var 
+- public/base/img/logo.png 
+ 
+or change the logo var in
 
 - templates/footer.html 
 - templates/header.html
@@ -224,7 +226,7 @@ To change the logo file, in header and footer override the file
     ```
         npm run compile-css
     ```
-publish
+
 
 ## Tests
 
