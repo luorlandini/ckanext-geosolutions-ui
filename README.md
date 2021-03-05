@@ -172,6 +172,7 @@
 Start to customize
 
 1. Style
+
 Change less variables, in the less folder, is possibile change
 the less var, to have a basic style customization.
 
@@ -192,6 +193,7 @@ the less var, to have a basic style customization.
     @layoutFontFamily: "Helvetica Neue", Arial, sans-serif;
     ```
 2. Logo
+
 To change the logo file, in header and footer override the file
 
 - public/base/img/logo.png or change this var
@@ -200,7 +202,8 @@ To change the logo file, in header and footer override the file
         {% set logo = '/base/img/logo.png' %}
     ```
 
-3. Change footer info:
+3. Change footer info
+
     templates/footer.html change this var
 
     ```
