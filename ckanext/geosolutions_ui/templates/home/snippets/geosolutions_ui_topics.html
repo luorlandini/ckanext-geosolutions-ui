@@ -1,0 +1,25 @@
+{% set topics = "" %}
+
+<div class="item-container">
+    <div class="item-container-head">
+        <h3 class="heading"><strong>{{ _('Organizations') }}</strong></h3>
+        <a href="{{ h.url_for('organization.index') }}">
+            <div class="item-see-all">{{_('See all')}} &raquo;</div>
+        </a>
+    </div>
+    <div class="item-container-body box">
+        {% if topics %}
+            {% for topic in topics %}
+                {% set type = topic.type or 'group' %}
+                {% set url = h.url_for(type ~ '_read', id=topic.name) %}
+                {% snippet 'home/snippets/item.html',
+                    title=topic.title,
+                    dataset_url=url,
+                    dataset_count= topic.package_count,
+                    thumbnail=topic.image_display_url %}
+            {% endfor %}
+        {% else %}
+            <strong>Missing data</strong>
+        {% endif %}
+    </div>
+</div>
